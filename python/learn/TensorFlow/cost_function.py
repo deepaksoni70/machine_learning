@@ -22,11 +22,11 @@ for index in range(n):
     theta = theta + learning_rate;
 
 minCost = numpy.min(costValues) 
-print("minimum Cost = %d",minCost)
+print("minimum Cost =",minCost)
 
 minCostIndex = costValues.index(minCost)
 thetaFinal = thetaValues[minCostIndex]
-print("Final Theta value = %d",thetaFinal)
+print("Final Theta value =",thetaFinal)
 
 #gradient descent
 m,b,mvalues,bvalues,cValues = gd.gradient_descent_runner(train_X,train_Y, -2, 0, 0.005, 1000)
